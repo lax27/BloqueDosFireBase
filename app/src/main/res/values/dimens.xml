@@ -6,6 +6,10 @@
     <dimen name="medium">16dp</dimen>
     <dimen name="large">32dp</dimen>
 
+    <!-- margin value -->
     <dimen name="margin_normal">@dimen/medium</dimen>
+    <!-- SHADOWS VALUES -->
+    <dimen name="shadow_elevation">@dimen/medium</dimen>
+
 
 </resources>

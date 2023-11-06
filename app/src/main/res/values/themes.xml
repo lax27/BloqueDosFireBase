@@ -1,11 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base light aplication theme. -->
+    <style name="Theme.ModuloDosFireBase" parent="Theme.ModuloDosFireBaseBase"></style>
     <!-- Base application theme. -->
-    <style name="Theme.ModuloDosFireBase" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.ModuloDosFireBaseBase" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/baseLight</item>
         <item name="colorPrimaryVariant">@color/lighterLight</item>
         <item name="colorOnPrimary">@color/baseGrey</item>
-        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textColorPrimary">@color/baseLight</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/baseGrey</item>
         <item name="colorSecondaryVariant">@color/lighterGrey</item>
@@ -18,5 +20,29 @@
         <item name="android:statusBarColor">@color/baseGrey</item>
         <!-- Customize your theme here. -->
         <item name="android:colorBackground">?attr/colorPrimary</item>
+        <!-- SHADOWS -->
+        <item name="android:ambientShadowAlpha">0.7</item>
+        <item name="android:spotShadowAlpha">0.7</item>
+        <!-- Customize your theme here. -->
+        <item name="materialCardViewStyle">@style/MDosFriebase.CardView</item>
+        <item name="toolbarStyle">@style/ModulDosFireBase.Toolbar</item>
+        <item name="textInputStyle">@style/ModulDosFireBase.Input</item>
     </style>
+
+    <style name="ModulDosFireBase.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+    <item name="android:background">@color/baseGrey</item>
+    <item name="android:elevation">@dimen/shadow_elevation</item>
+    </style>
+    <style name="MDosFriebase.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/shadow_elevation</item>
+    </style>
+
+<style name="ModulDosFireBase.Input" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+    <item name="boxStrokeWidth">@dimen/tiny</item>
+    <item name="boxStrokeWidthFocused">@dimen/tiny</item>
+    <item name="boxStrokeErrorColor">@color/baseRed</item>
+    <item name="android:textColorHint">@color/baseLight</item>
+    <item name="hintTextColor">@color/lighterLight</item>
+
+</style>
 </resources>
