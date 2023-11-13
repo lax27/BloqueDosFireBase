@@ -5,11 +5,12 @@
     <dimen name="small">8dp</dimen>
     <dimen name="medium">16dp</dimen>
     <dimen name="large">32dp</dimen>
-
+    <dimen name="Gigant">48dp</dimen>
     <!-- margin value -->
     <dimen name="margin_normal">@dimen/medium</dimen>
     <!-- SHADOWS VALUES -->
     <dimen name="shadow_elevation">@dimen/medium</dimen>
 
+    <dimen name="bottom_bar_icon">@dimen/Gigant</dimen>
 
 </resources>

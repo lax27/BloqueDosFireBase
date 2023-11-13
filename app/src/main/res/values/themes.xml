@@ -15,7 +15,7 @@
         <item name="android:textColorSecondary">?attr/colorOnSecondary</item>
         <!--surface color -->
         <item name="colorSurface">?attr/colorSecondary</item>
-        <item name="colorOnSurface">?attr/colorOnSecondary</item>
+        <item name="colorOnSurface">@color/ClearColor</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/baseGrey</item>
         <!-- Customize your theme here. -->

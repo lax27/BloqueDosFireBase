@@ -14,5 +14,6 @@
     
     <color name="debugColor">#FA00C0</color>
 
+    <color name="ClearColor">#00FFFFFF</color>
     
 </resources>
