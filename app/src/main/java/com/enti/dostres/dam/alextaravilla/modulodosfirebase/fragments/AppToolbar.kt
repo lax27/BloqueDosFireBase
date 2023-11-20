@@ -1,4 +1,4 @@
-package com.enti.dostres.dam.alextaravilla.modulodosfirebase
+package com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments
 
 import androidx.fragment.app.Fragment
 import android.os.Bundle

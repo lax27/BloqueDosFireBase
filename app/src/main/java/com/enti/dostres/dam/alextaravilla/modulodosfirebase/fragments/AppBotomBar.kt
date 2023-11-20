@@ -1,11 +1,11 @@
-package com.enti.dostres.dam.alextaravilla.modulodosfirebase
+package com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.enti.dostres.dam.alextaravilla.modulodosfirebase.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class AppBotomBar: Fragment() {

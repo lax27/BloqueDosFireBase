@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982680131138",
+    "project_id": "modulodosfirebaseclase",
+    "storage_bucket": "modulodosfirebaseclase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982680131138:android:da01c1cd12bfce273affdb",
+        "android_client_info": {
+          "package_name": "com.enti.dostres.dam.alextaravilla.modulodosfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABcWBGSI-J4tALxH7fLGN0Llyj6kFV5vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

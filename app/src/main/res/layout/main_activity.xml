@@ -12,7 +12,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/componentToolBarContainer"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.AppToolbar"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/component_appBottom_bar_container"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.AppBotomBar"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppBotomBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -30,7 +30,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/component_navhost_container"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.AppNavHost"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppNavHost"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/componentToolBarContainer"

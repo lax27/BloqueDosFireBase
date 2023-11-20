@@ -1,13 +1,13 @@
-package com.enti.dostres.dam.alextaravilla.modulodosfirebase
+package com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments
 
 import android.os.Bundle
-import android.text.GetChars
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.enti.dostres.dam.alextaravilla.modulodosfirebase.R
 
 class AppNavHost: Fragment() {
 
