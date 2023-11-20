@@ -9,6 +9,7 @@ class MyFireBase {
     companion object{
 
         lateinit var analytics: MyFireBaseAnalitycs
+        val crashalyitcs = MyFireBaseCrashalyitcs()
 
         fun init(appContext: Application){
             analytics = MyFireBaseAnalitycs(appContext)

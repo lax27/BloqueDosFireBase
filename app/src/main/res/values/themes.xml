@@ -32,6 +32,7 @@
     <style name="ModulDosFireBase.Toolbar" parent="Widget.MaterialComponents.Toolbar">
     <item name="android:background">@color/baseGrey</item>
     <item name="android:elevation">@dimen/shadow_elevation</item>
+        <item name="navigationIconTint">@color/baseLight</item>
     </style>
     <style name="MDosFriebase.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="cardElevation">@dimen/shadow_elevation</item>

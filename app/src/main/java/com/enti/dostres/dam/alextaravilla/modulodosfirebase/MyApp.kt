@@ -17,5 +17,11 @@ class MyApp:Application() {
         //enviar envento de que la app se a abierto
         FB.init(this)
         FB.analytics.LogOpenApp()
+
+        FB.crashalyitcs.LogSimpleError("On Open app Error"){
+            key("Name","no se abre jaja")
+            key("es un error",true)
+        }
+
     }
 }
