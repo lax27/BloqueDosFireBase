@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AppDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/componentToolBarContainer"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            tools:layout="@layout/component_toolbar"
+            />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/component_appBottom_bar_container"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppBotomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            tools:layout="@layout/component_bottombar"
+            />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/component_navhost_container"
+            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppNavHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/componentToolBarContainer"
+            android:layout_above="@id/component_appBottom_bar_container"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_drawer_menu"
+        android:layout_gravity="start"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

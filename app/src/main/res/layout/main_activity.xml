@@ -6,37 +6,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/NavigationDrawerContainer"
+        android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppDrawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout="@layout/component_navigationdrawer"
+        />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/componentToolBarContainer"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            tools:layout="@layout/component_toolbar"
-            />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/component_appBottom_bar_container"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppBotomBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            tools:layout="@layout/component_bottombar"
-            />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/component_navhost_container"
-            android:name="com.enti.dostres.dam.alextaravilla.modulodosfirebase.fragments.AppNavHost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/componentToolBarContainer"
-            android:layout_above="@id/component_appBottom_bar_container"
-            />
-
-    </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

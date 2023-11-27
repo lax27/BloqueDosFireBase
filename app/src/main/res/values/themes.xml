@@ -24,10 +24,20 @@
         <item name="android:ambientShadowAlpha">0.7</item>
         <item name="android:spotShadowAlpha">0.7</item>
         <!-- Customize your theme here. -->
+        <item name="navigationViewStyle">@style/ModulDosFireBase.Drawer</item>
         <item name="materialCardViewStyle">@style/MDosFriebase.CardView</item>
         <item name="toolbarStyle">@style/ModulDosFireBase.Toolbar</item>
         <item name="textInputStyle">@style/ModulDosFireBase.Input</item>
     </style>
+
+
+    <style name="ModulDosFireBase.Drawer" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">@color/baseLight</item>
+        <item name="itemTextColor">@color/baseLight</item>
+        <item name="elevation">@dimen/shadow_elevation</item>
+
+    </style>
+
 
     <style name="ModulDosFireBase.Toolbar" parent="Widget.MaterialComponents.Toolbar">
     <item name="android:background">@color/baseGrey</item>
