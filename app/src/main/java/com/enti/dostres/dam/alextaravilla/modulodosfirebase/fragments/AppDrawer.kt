@@ -46,6 +46,24 @@ class AppDrawer: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+
+            when(menuItem.itemId)
+            {
+                R.id.login_drawer_button -> {
+                    var loginScreen = LoginScreen()
+                    val transaction = childFragmentManager.beginTransaction()
+                    transaction.setCustomAnimations(R.anim.enter_from_right,R.anim.exit_to_right,R.anim.enter_from_right,R.anim.exit_to_right)
+                    transaction.replace(R.id.reusableDiaLogsContainer,loginScreen)
+                        .addToBackStack(null)
+                        .commit()
+                    drawer.closeDrawers()
+                }
+
+            }
+            true
+        }
     }
 
     fun open(){

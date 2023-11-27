@@ -5,4 +5,11 @@
     <string name="home_title">Home</string>
     <string name="chat_title">Chat</string>
     <string name="login_label">Login</string>
+    <string name="field_verify_password_label">Verify password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="back_to_login_button">Back to login</string>
+    <string name="finish_register_button">Finish register</string>
+    <string name="user_login_message">Hello %s you are logged</string>
+    <string name="login_error">Login ERROR</string>
 </resources>

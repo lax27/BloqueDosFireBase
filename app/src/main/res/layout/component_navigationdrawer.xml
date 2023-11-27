@@ -38,6 +38,14 @@
             android:layout_above="@id/component_appBottom_bar_container"
             />
 
+        <FrameLayout
+            android:id="@+id/reusableDiaLogsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/componentToolBarContainer"
+            android:layout_alignParentBottom="true"
+            />
+
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
