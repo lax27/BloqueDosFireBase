@@ -8,7 +8,11 @@ import android.view.ViewGroup
 import com.enti.dostres.dam.alextaravilla.modulodosfirebase.R
 import com.enti.dostres.dam.alextaravilla.modulodosfirebase.classes.firebase.FB
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.Job
+import java.util.Date
 
 class AppToolbar : Fragment(){
 
@@ -47,10 +51,29 @@ class AppToolbar : Fragment(){
             when(menuItem.itemId){
                 R.id.toolbar_button_test -> {
                     //throw RuntimeException("Test Crash") // Force a crash
-                    FB.crashalyitcs.LogSimpleError("Subnormal Error"){
+                   /* FB.crashalyitcs.LogSimpleError("Subnormal Error"){
                         key("SubnormalName","AAAAAA")
                         key("subnormalNum",3)
-                    }
+                    }*/
+
+                    val db = Firebase.firestore
+                    val table = db.collection("Test")
+                    val newDocument = table.document()
+
+                    val newTestClass = TestDatabaseClass(newDocument.id,"pruebas")
+
+                    newDocument
+                        .set(newTestClass)
+                        .addOnSuccessListener {
+                            Snackbar.make(AppDrawer.get().fragmentView,
+                                "ha funcionado",
+                                Snackbar.LENGTH_LONG).show()
+                        }
+                        .addOnFailureListener{
+                            Snackbar.make(AppDrawer.get().fragmentView,
+                                "ha fallado",
+                                Snackbar.LENGTH_LONG).show()
+                        }
                 }
             }
 
@@ -59,3 +82,9 @@ class AppToolbar : Fragment(){
     }
 
 }
+
+data class TestDatabaseClass(
+    var id: String? = null,
+    var name: String? = null,
+    var creationDate: Date? = Date()
+)
